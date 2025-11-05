@@ -48,8 +48,9 @@ function App() {
     }
   }, [route]);
 
+  // Keep container neutral; do not center or add padding that could disrupt absolute positions
   return (
-    <div className="App" style={{ minHeight: '100vh' }}>
+    <div className="App">
       {element}
     </div>
   );

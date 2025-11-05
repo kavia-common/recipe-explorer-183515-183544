@@ -24,6 +24,7 @@ export default function SignInScreen() {
       links.push(link);
     };
 
+    // Load order: common first, then specific
     addCss('/assets/common.css');
     addCss('/assets/sign-in-11-235.css');
 
@@ -53,7 +54,7 @@ export default function SignInScreen() {
   // Render the generated markup as JSX with minimal adjustments (class -> className)
   return (
     <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#ffffff' }}>
-      {/* Screen container - keep exact size for pixel-perfect */}
+      {/* Fixed-size screen container - exact size for pixel-perfect */}
       <div
         id="screen-sign-in-11-235"
         className="screen ds-style-10"
