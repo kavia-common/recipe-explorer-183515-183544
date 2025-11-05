@@ -13,21 +13,29 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
+Install dependencies. This project uses React 18 and CRA 5.
 
+### `npm start`
 Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 - Sign In screen is available as the default route and at `/#/sign-in`.
 
 ### `npm test`
-
-Launches the test runner in interactive watch mode.
+Launches the test runner in CI-friendly mode (watch disabled in CI). Use `CI=false npm test` locally for interactive watch mode.
 
 ### `npm run build`
-
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+### `npm run lint`
+Runs ESLint with React plugin. Lint warnings are treated as non-blocking in CI.
+
+## Maintenance
+
+- To update packages: `npm outdated` then `npm install <pkg>@latest`. React and CRA stay on the latest React 18.x and CRA 5.x respectively for compatibility.
+- Security audit (optional, non-breaking): `npm audit fix` (only applies non-breaking updates).
 
 ## Customization
 
@@ -60,25 +68,19 @@ Common components include:
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
 ### Analyzing the Bundle Size
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
 ### Making a Progressive Web App
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
 ### Advanced Configuration
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
