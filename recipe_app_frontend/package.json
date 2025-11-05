@@ -2,7 +2,6 @@
   "name": "react-kavia",
   "version": "0.1.0",
   "private": true,
-
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -35,8 +34,11 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "eslint": "^9.11.1",
+    "eslint": "^8.57.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-hooks": "^5.0.0"
+    "eslint-plugin-react-hooks": "^4.6.2"
   }
 }
